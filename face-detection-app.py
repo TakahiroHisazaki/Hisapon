@@ -6,6 +6,10 @@ from PIL import ImageDraw
 from PIL import ImageFont
 
 st.title('表情認識アプリ')
+st.header('概要')
+st.write('こちらは人物の顔画像を読み込んで年齢推定や感情推定ができるアプリです。画像内の顔を分析するAIを搭載したAzure Face APIを利用しています。リンクは下記です。')
+st.markdown('<a href="https://azure.microsoft.com/ja-jp/services/cognitive-services/face/">Azure Face API</a>', unsafe_allow_html=True)
+
 
 subscription_key = '9e8317968d3d4dff826add79d0c52512'
 assert subscription_key
